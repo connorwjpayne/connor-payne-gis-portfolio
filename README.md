@@ -1,2 +1,2 @@
-# connor-payne-gis-portfolio
+# Connor-Payne-Professional-Portfolio
 Professional Portfolio
