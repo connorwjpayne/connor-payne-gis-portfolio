@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connor Payne | GIS Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Connor Payne</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><img src="assets/img/connor-headshot.jpeg" alt="Connor Payne headshot" style="width:180px;height:180px;object-fit:cover;border-radius:50%;border:6px solid white;box-shadow:0 10px 25px rgba(0,0,0,.15);margin-bottom:20px;">
+        <p class="eyebrow">GIS • Asset Management • Web Mapping • Spatial Analysis</p>
+        <h1>GIS & Asset Management Analyst building practical geospatial solutions.</h1>
+        <p class="hero-text">
+          I combine field data collection, spatial analysis, web mapping, database workflows,
+          and programming to turn location-based data into clear decision-support tools.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="docs/Connor_Payne_Resume.pdf" target="_blank" rel="noopener">View 2026 Resume</a>
+        </div>
+        <div class="quick-stats">
+          <span><strong>GIS</strong> ArcGIS Pro / Online / Survey123</span>
+          <span><strong>Code</strong> C# / SQL / Python / JavaScript</span>
+          <span><strong>Focus</strong> Municipal GIS & Web Apps</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/img/urban-pollinator-app.png" alt="Urban Pollinators web application screenshot" />
+        <div class="floating-card">
+          <strong>Featured App</strong>
+          <span>Google Maps API + SQL + C#</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-band">
+      <div>
+        <h2>Portfolio Focus</h2>
+        <p>
+          This portfolio highlights applied GIS work across web applications, municipal asset workflows,
+          emergency planning, remote sensing, transportation safety, suitability modelling, and field data collection.
+        </p>
+      </div>
+      <div class="band-tags">
+        <span>Web GIS</span>
+        <span>Asset QA/QC</span>
+        <span>Remote Sensing</span>
+        <span>Emergency Modelling</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <article class="project feature-card green">
+        <div class="project-image wide">
+          <img src="assets/img/urban-pollinator-app.png" alt="Urban Pollinators in the City of London web map interface" />
+        </div>
+        <div class="project-content">
+          <p class="project-type">Web GIS Application</p>
+          <h3>Pollinator & Invasive Species Web Application</h3>
+          <p>
+            Built an interactive mapping application for London, Ontario using Google Maps API,
+            C#, SQL, and iNaturalist observation data. The application supports species filtering,
+            district summaries, observation density mapping, and separate views for pollinators and threats.
+          </p>
+          <div class="tech-list">
+            <span>Google Maps API</span><span>C#</span><span>SQL</span><span>iNaturalist Data</span><span>Web GIS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project feature-card blue reverse">
+        <div class="project-image wide">
+          <img src="assets/img/train-derailment-poster.png" alt="Train derailment evacuation planning poster for London Ontario" />
+        </div>
+        <div class="project-content">
+          <p class="project-type">Emergency Planning GIS</p>
+          <h3>Train Derailment Emergency Evacuation Planning – London, Ontario</h3>
+          <p>
+            Developed an evacuation planning model for a simulated derailment scenario, including evacuation zones,
+            shelter allocation, transit detour analysis, population demand, and a ModelBuilder workflow to support repeatable analysis.
+          </p>
+          <div class="tech-list">
+            <span>ArcGIS Pro</span><span>Network Analysis</span><span>ModelBuilder</span><span>Transit Routing</span><span>Emergency Planning</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project feature-card yellow">
+        <div class="project-gallery">
+          <img src="assets/img/urban-growth-true-colour.png" alt="True colour composite urban growth analysis map" />
+          <img src="assets/img/urban-growth-false-colour.png" alt="False colour composite vegetation and urban expansion map" />
+          <img src="assets/img/urban-growth-ndbi.png" alt="NDBI urban growth change detection map" />
+        </div>
+        <div class="project-content">
+          <p class="project-type">Remote Sensing & Change Detection</p>
+          <h3>Urban Growth Analysis – London, Ontario (2015–2025)</h3>
+          <p>
+            Compared Landsat imagery from 2015 and 2025 to evaluate urban expansion, vegetation loss,
+            infill development, and built-up surface change using true colour, false colour, and NDBI outputs.
+          </p>
+          <div class="tech-list">
+            <span>ArcGIS Pro</span><span>Landsat 8/9</span><span>NDBI</span><span>Raster Analysis</span><span>Change Detection</span>
+          </div>
+          <div class="link-row">
+            <a href="docs/True Colour Composite_Payne.pdf" target="_blank">True Colour PDF</a>
+            <a href="docs/False Colour Composite_Payne.pdf" target="_blank">False Colour PDF</a>
+            <a href="docs/NDBI Change_Payne.pdf" target="_blank">NDBI PDF</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Case Study</p>
+        <h2>Inside the Pollinator & Invasive Species App</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;">
+        <img src="assets/img/urban-pollinator-app.png" alt="Pollinator App Screenshot" style="width:100%;border-radius:20px;">
+        <div>
+          <h3>Project Overview</h3>
+          <p>
+            Developed as part of a collaborative GIS development project, this application uses Google Maps API,
+            SQL databases, ArcGIS workflows, and iNaturalist observations to visualize pollinator distributions
+            and invasive species threats across London, Ontario.
+          </p>
+          <ul>
+            <li>Integrated Google Maps API for interactive mapping.</li>
+            <li>Managed ecological datasets using SQL and GIS workflows.</li>
+            <li>Built species filters, district summaries, and density visualizations.</li>
+            <li>Supported biodiversity analysis through hotspot and overlay techniques.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Technical GIS</p>
+        <h2>Analysis & Field Projects</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="mini-card">
+          <img src="assets/img/collision-hotspot-map.png" alt="Toronto collision hotspot analysis output" />
+          <div>
+            <h3>Vehicle Collision Hotspot Analysis – Toronto</h3>
+            <p>Analyzed fatal and non-fatal collision patterns from 2006–2021 using hotspot mapping, temporal charts, and fatality filtering.</p>
+            <div class="tech-list small"><span>Hotspot Analysis</span><span>ArcGIS Pro</span><span>Open Data</span></div>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <img src="assets/img/collision-clusters-chart.png" alt="Toronto collision clusters and crash count chart" />
+          <div>
+            <h3>Transportation Safety Patterns</h3>
+            <p>Identified high-risk areas and peak crash times, including downtown clusters and commuter-heavy corridors.</p>
+            <div class="tech-list small"><span>Charts</span><span>Temporal Analysis</span><span>Safety Planning</span></div>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <img src="assets/img/flood-risk-map.png" alt="Flood risk assessment 3D map" />
+          <div>
+            <h3>Flood Risk Assessment – Western University</h3>
+            <p>Created a 3D flood risk map to communicate submerged and above-water zones across a campus-scale study area.</p>
+            <div class="tech-list small"><span>3D GIS</span><span>Raster</span><span>Risk Mapping</span></div>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <img src="assets/img/high-school-location.png" alt="Proposed London high school location map" />
+          <div>
+            <h3>High School Site Suitability – London, Ontario</h3>
+            <p>Used census and open-land criteria to identify a proposed school location in relation to nearby neighbourhoods and road access.</p>
+            <div class="tech-list small"><span>Suitability</span><span>Census Data</span><span>Planning</span></div>
+          </div>
+        </article>
+
+        <article class="mini-card">
+          <img src="assets/img/kansas-tornado-map.png" alt="Kansas tornado affected streets map" />
+          <div>
+            <h3>Kansas Tornado Impact Analysis</h3>
+            <p>Mapped streets, parcels, schools, and tornado buffer impacts to identify affected areas and potential safety zones.</p>
+            <div class="tech-list small"><span>Buffer Analysis</span><span>Hazard Mapping</span><span>Cartography</span></div>
+          </div>
+        </article>
+
+        <article class="mini-card text-only">
+          <div>
+            <h3>Community Asset Condition Assessment – Old East Village</h3>
+            <p>
+              Built a Survey123 workflow to assess mural condition, visibility, wall material, mural type,
+              community involvement, photos, and GPS locations, then cleaned and mapped the dataset in ArcGIS Pro.
+            </p>
+            <div class="tech-list small"><span>Survey123</span><span>XLSForm</span><span>Field Data</span><span>QA/QC</span></div>
+            <a href="docs/Data Quality Report - Project 4 - Connor Payne.docx" target="_blank">View Report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Additional Work</p>
+        <h2>Supporting GIS Projects</h2>
+        <p>
+          Additional work includes white rhino habitat suitability modelling, landform mapping,
+          public asset condition assessment, collision analysis, and site suitability analysis.
+        </p>
+      </div>
+      <div class="support-list">
+        <a href="docs/Final_Project_Report_GEO3222_ConnorPayne.docx" target="_blank">White Rhino Habitat Suitability Report</a>
+        <a href="docs/Final Project_ConnorPayne.pdf" target="_blank">Toronto Collision Analysis Report</a>
+        <a href="docs/Landforms of PEI Map.pdf" target="_blank">Landforms of PEI Map</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div><h3>GIS & Mapping</h3><p>ArcGIS Pro, ArcGIS Online, ArcMap, ArcCatalog, QGIS, Survey123, Experience Builder</p></div>
+        <div><h3>Development</h3><p>C#, SQL, Python, JavaScript, HTML, CSS, Visual Studio, VS Code</p></div>
+        <div><h3>Data & Analysis</h3><p>Geodatabases, QA/QC, schema design, raster/vector data, LiDAR, Landsat imagery</p></div>
+        <div><h3>Methods</h3><p>Field data collection, suitability analysis, buffer analysis, network analysis, change detection</p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <p class="eyebrow">Experience</p>
+      <h2>Applied Municipal & Academic GIS Experience</h2>
+      <div class="timeline">
+        <div>
+          <span class="current-badge">Current Position</span>
+          <h3>GIS Student – Asset & Quality Management</h3>
+          <p><strong>Municipality of Chatham-Kent | May 2026 – Present</strong></p>
+          <p>Conduct field data collection for municipal assets using GPS-enabled mobile GIS tools, translate field observations into geospatial datasets and maps, support GIS database maintenance, assist with QA/QC processes, and contribute to mapping deliverables, documentation, and spatial reporting for municipal operations.</p>
+        </div>
+        <div>
+          <h3>Geographic Information Systems Postgraduate Program</h3>
+          <p><strong>Fanshawe College | September 2025 – April 2026</strong></p>
+          <p>Applied GIS training focused on spatial data acquisition, web GIS, databases, remote sensing, field data collection, spatial analysis, and project-based geospatial problem solving.</p>
+        </div>
+        <div>
+          <h3>Bachelor of Arts – Physical Geography</h3>
+          <p><strong>Western University | September 2020 – April 2024</strong></p>
+          <p>Built a foundation in physical geography, environmental analysis, remote sensing, transportation geography, GIS, geomorphology, river morphology, statistics, and urban development.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect</h2>
+        <p>Email: <a href="mailto:connorwjpayne@gmail.com">connorwjpayne@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/connor-payne-29212836b/" target="_blank" rel="noopener">Connor Payne</a></p>
+      </div>
+      <a class="btn primary" href="docs/Connor_Payne_Resume.pdf" target="_blank" rel="noopener">Download 2026 Resume</a>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Close image preview">×</button>
+    <img id="lightboxImage" src="" alt="" />
+  </div>
+
+  <footer>
+    <p>© 2026 Connor Payne. Built for GIS, asset management, and spatial analysis opportunities.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
